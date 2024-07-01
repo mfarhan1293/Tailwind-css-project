@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link style css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>tailwind css project</title>
+</head>
+<body>
+
+
+    
+    <!-- header -->
+    <header>
+
+        <!-- top header -->
+        <div class="bg-[#020d26] p-2 md:block hidden">
+            <div class="container items-center mx-auto">
+                <div class="flex items-center justify-between">
+                    <div class="flex">
+                        <div class="px-3 border-r">
+                            <i class="fa-solid fa-mobile text-[#ff5e14]"></i>
+                            <span class="text-white text-sm">+884574156414</span>
+                        </div>
+                        <div class="px-3 border-r">
+                            <i class="fa-regular fa-envelope text-[#ff5e14]"></i>
+                            <span class="text-white text-sm">example@demo.com</span>
+                        </div>
+                        <div class="px-3">
+                            <i class="fa-regular fa-clock text-[#ff5e14]"></i>
+                            <span class="text-white text-sm">Sun - Fri 10AM - PM</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <a href="#"><i class="fa-brands fa-facebook-f text-white px-2 hover:text-[#fa4f00]"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter text-white px-2 hover:text-[#fa4f00]"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram text-white px-2 hover:text-[#fa4f00]"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p text-white px-2 hover:text-[#fa4f00]"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- navbar -->
+        <nav class="bg-white px-2 md:py-5 py-3 border-b">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-3 items-center flex">
+                    <div>
+                        <a href="#"><img src="images/nav-logo.png" class="md:w-[180px] md:h-[50px] w-[150px] h-[40px]"></a>
+                    </div>
+                    <div>
+                        <ul class="flex hidden md:flex">
+                            <li class="text-lg capitalize px-3 hover:text-[#fa4f00]"><a href="#">home</a></li>
+                            <li class="text-lg capitalize px-3 hover:text-[#fa4f00]"><a href="#">pages</a></li>
+                            <li class="text-lg capitalize px-3 hover:text-[#fa4f00]"><a href="#">services</a></li>
+                            <li class="text-lg capitalize px-3 hover:text-[#fa4f00]"><a href="#">projects</a></li>
+                            <li class="text-lg capitalize px-3 hover:text-[#fa4f00]"><a href="#">blog</a></li>
+                            <li class="text-lg capitalize px-3 hover:text-[#fa4f00]"><a href="#">contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="bg-[#ff5e14] px-6 py-3 hidden md:flex rounded-3xl float-right hover:bg-[#fa4f00] duration-200">
+                            <span class="text-white">get a qoute</span>
+                            <i class="fa-solid fa-angle-right text-white text-base pl-2"></i>
+                        </a>
+                        <button class="p-2 md:hidden float-right" onclick="handleMenu()">
+                            <i class="fa fa-bars text-xl" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <!-- responsive navbar -->
+                    <div id="nav-dailoge" class="fixed md:hidden hidden bg-red-100 z-10 inset-0 px-2 py-3">
+                        <div class="flex justify-between">
+                            <a href="#"><img src="images/nav-logo.png" class="w-[150px] h-[40px]"></a>
+                            <button class="p-2 md:hidden float-right" onclick="handleMenu()">
+                                <i class="fa fa-xmark text-xl" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <ul class="block my-10">
+                                <li class="text-lg capitalize px-3 py-1 hover:text-[#fa4f00]"><a href="#">home</a></li>
+                                <li class="text-lg capitalize px-3 py-1 hover:text-[#fa4f00]"><a href="#">pages</a></li>
+                                <li class="text-lg capitalize px-3 py-1 hover:text-[#fa4f00]"><a href="#">services</a></li>
+                                <li class="text-lg capitalize px-3 py-1 hover:text-[#fa4f00]"><a href="#">projects</a></li>
+                                <li class="text-lg capitalize px-3 py-1 hover:text-[#fa4f00]"><a href="#">blog</a></li>
+                                <li class="text-lg capitalize px-3 py-1 hover:text-[#fa4f00]"><a href="#">contact</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="bg-[#ff5e14] px-4 py-3 rounded-3xl hover:bg-[#fa4f00] duration-200">
+                            <span class="text-white text-sm">get a qoute</span>
+                            <i class="fa-solid fa-angle-right text-white text-base pl-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+
+
+
+    <!-- hero section -->
+
+      <!-- Swiper -->
+        <div class="swiper mySwiper w-[100%] h-[600px]">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide items-center justify-center flex bg-[url('images/slide-1.jpg')] bg-cover bg-center">
+                <div class="container mx-auto">
+                    <div class="max-w-[1160px] mx-auto">
+                        <div class="grid md:grid-cols-2 grid-cols-1">
+                            <div class="md:text-left text-center md:px-1 px-10">
+                                <h1 class="text-white md:text-6xl text-4xl font-bold">Great Technology <br> Best Services</h1>
+                                <p class="md:text-lg text-sm text-white leading-6 mt-10">Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look</p>
+                                <div class="mt-10">
+                                    <a href="#" class="bg-[#ff5e14] md:px-6 md:py-3 px-4 py-3 rounded-3xl hover:bg-[#fa4f00] duration-200">
+                                        <span class="text-white capitalize md:text-base text-sm">our industry</span>
+                                        <i class="fa-solid fa-angle-right text-white text-base pl-2"></i>
+                                    </a>
+                                    <a href="#" class="bg-white md:px-6 md:py-3 px-4 py-3 rounded-3xl hover:bg-[#fa4f00] hover:text-white ml-4 duration-200">
+                                        <span class="capitalize md:text-base text-sm">contact us</span>
+                                        <i class="fa-solid fa-angle-right text-base pl-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide items-center justify-center flex bg-[url('images/slide-2.jpg')] bg-cover bg-center">
+                <div class="container mx-auto">
+                    <div class="max-w-[1160px] mx-auto">
+                        <div class="grid md:grid-cols-2 grid-cols-1">
+                            <div class="md:text-left text-center md:px-1 px-10">
+                                <h1 class="text-white md:text-6xl text-4xl font-bold">We Provide Best <br> Industrial Services</h1>
+                                <p class="md:text-lg text-sm text-white leading-6 mt-10">Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look</p>
+                                <div class="mt-10">
+                                    <a href="#" class="bg-[#ff5e14] md:px-6 md:py-3 px-4 py-3 rounded-3xl hover:bg-[#fa4f00] duration-200">
+                                        <span class="text-white capitalize md:text-base text-sm">our industry</span>
+                                        <i class="fa-solid fa-angle-right text-white text-base pl-2"></i>
+                                    </a>
+                                    <a href="#" class="bg-white md:px-6 md:py-3 px-4 py-3 rounded-3xl hover:bg-[#fa4f00] hover:text-white ml-4 duration-200">
+                                        <span class="capitalize md:text-base text-sm">contact us</span>
+                                        <i class="fa-solid fa-angle-right text-base pl-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide items-center justify-center flex bg-[url('images/slide-3.jpg')] bg-cover bg-center">
+                <div class="container mx-auto">
+                    <div class="max-w-[1160px] mx-auto">
+                        <div class="grid md:grid-cols-2 grid-cols-1">
+                            <div class="md:text-left text-center md:px-1 px-10">
+                                <h1 class="text-white md:text-6xl text-4xl font-bold">Great Technology <br> Best Services</h1>
+                                <p class="md:text-lg text-sm text-white leading-6 mt-10">Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look</p>
+                                <div class="mt-10">
+                                    <a href="#" class="bg-[#ff5e14] md:px-6 md:py-3 px-4 py-3 rounded-3xl hover:bg-[#fa4f00] duration-200">
+                                        <span class="text-white capitalize md:text-base text-sm">our industry</span>
+                                        <i class="fa-solid fa-angle-right text-white text-base pl-2"></i>
+                                    </a>
+                                    <a href="#" class="bg-white md:px-6 md:py-3 px-4 py-3 rounded-3xl hover:bg-[#fa4f00] hover:text-white ml-4 duration-200">
+                                        <span class="capitalize md:text-base text-sm">contact us</span>
+                                        <i class="fa-solid fa-angle-right text-base pl-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next text-white pl-2 hidden md:block"></div>
+            <div class="swiper-button-prev text-white hidden md:block"></div>
+        </div>
+
+
+
+
+        <!-- about us section -->
+
+        <section class="bg-white md:py-[100px] py-[50px] px-3 items-center">
+            <div class="container mx-auto">
+                <div class="max-w-[1160px] mx-auto ">
+                    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mb-20">
+                        <div class="border">
+                            <div class="px-6 py-10">
+                                <img src="images/about-col-1.png" class="w-[60px] h-[60px]">
+                                <h3 class="text-xl font-semibold mt-5">01. Quality Materials</h3>
+                                <p class="text-[#687187] mt-5">Raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="px-6 py-10">
+                                <img src="images/about-col-2.png" class="w-[60px] h-[60px]">
+                                <h3 class="text-xl font-semibold mt-5">02. Expert Team</h3>
+                                <p class="text-[#687187] mt-5">Raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="px-6 py-10">
+                                <img src="images/about-col-3.png" class="w-[60px] h-[60px]">
+                                <h3 class="text-xl font-semibold mt-5">03. Timely Delivery</h3>
+                                <p class="text-[#687187] mt-5">Raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="px-6 py-10">
+                                <img src="images/about-col-4.png" class="w-[60px] h-[60px]">
+                                <h3 class="text-xl font-semibold mt-5">04. 24/7 Suport</h3>
+                                <p class="text-[#687187] mt-5">Raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- about us -->
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
+                        <div>
+                            <div class="md:mr-14">
+                                <img src="images/about-image.jpg" class="w-[100%]">
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[#ff5e14] md:text-base text-sm uppercase  font-semibold">about us</span>
+                            <h2 class="md:text-[40px] text-3xl font-bold tracking-tight leading-10 mt-5">Most Modern & Powerfull</h2>
+                            <h3 class="md:text-4xl text-3xl tracking-tight mb:mb-5 mb-2">Industry in the world</h3>
+                            <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative">
+                                <div class="bg-white w-[4px] h-[4px] absolute right-[20px]"></div>
+                            </div>
+                            <p class="text-[#687187] md:text-lg my-10">A collection of textile samples lay spread out on the table Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat</p>
+
+                            <div class="mb-12">
+                                <ul class="">
+                                    <li class="flex items-center">
+                                        <i class="fa-solid fa-arrow-right text-sm text-[#ff5e14]"></i>
+                                        <p class="text-[#687187] text-base pl-4 pb-1">Ftted out with a fur hat and fur boa</p>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-solid fa-arrow-right text-sm text-[#ff5e14]"></i>
+                                        <p class="text-[#687187] text-base pl-4 pb-1">It showed a lady fitted out with a fur hat and fur boa who sat</p>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-solid fa-arrow-right text-sm text-[#ff5e14]"></i>
+                                        <p class="text-[#687187] text-base pl-4 pb-1">Samsa was a travelling salesman and above it there hung</p>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-solid fa-arrow-right text-sm text-[#ff5e14]"></i>
+                                        <p class="text-[#687187] text-base pl-4 pb-1">Muff that covered the whole of her</p>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-solid fa-arrow-right text-sm text-[#ff5e14]"></i>
+                                        <p class="text-[#687187] text-base pl-4 pb-1">Samsa was a travelling salesman and above it there hung</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-[#ff5e1408] py-6 px-8 border-l border-[#ff5e1448]">
+                                <blockquote>
+                                    <p class="text-[#687187] md:text-lg mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nemo ab iste laboriosam deserunt ipsa eius dolores veritatis.</p>
+                                    <span class="text-[#687187] text-sm">- Adam ( CEO of the company )</span>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- service section -->
+        <section class="bg-[#f7f9fa] md:py-[100px] py-[50px] px-3">
+            <div class="container mx-auto">
+                <div class="max-w-[1160px] mx-auto">
+                    <div class="src-header text-center">
+                        <span class="text-[#ff5e14] md:text-base text-sm uppercase font-semibold">services</span>
+                            <h2 class="md:text-[40px] text-3xl font-bold tracking-tight leading-10 mt-5 capitalize">the best services</h2>
+                            <h3 class="md:text-4xl text-3xl tracking-tight mb:mb-5 mb-2">we provide</h3>
+                            <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative mx-auto">
+                                <div class="bg-white w-[4px] h-[4px] absolute right-[20px]"></div>
+                            </div>
+                    </div>
+                    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-10">
+                        <div class="hover:text-[#fa4f00] duration-200">
+                            <div>
+                                <img src="images/src-image-1.jpg" class="w-[100%] h-[auto]">
+                            </div>
+                            <div class="flex py-6">
+                                <div><i class="fa-regular fa-sun text-[#ff5e14] md:text-5xl text-4xl"></i></div>
+                                <div class="pl-6">
+                                    <span class="text-xl font-semibold capitalize ">power & energy</span>
+                                    <p class="text-[#687187] mt-2">Recently cut out of an illustrated magine and housed indust</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover:text-[#fa4f00] duration-200">
+                            <div>
+                                <img src="images/src-image-2.jpg" class="w-[100%] h-[auto]">
+                            </div>
+                            <div class="flex py-6">
+                                <div><i class="fa-solid fa-plug text-[#ff5e14] md:text-5xl text-4xl"></i></div>
+                                <div class="pl-6">
+                                    <span class="text-xl font-semibold capitalize ">mechanical works</span>
+                                    <p class="text-[#687187] mt-2">Recently cut out of an illustrated magine and housed indust</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover:text-[#fa4f00] duration-200">
+                            <div>
+                                <img src="images/src-image-3.jpg" class="w-[100%] h-[auto]">
+                            </div>
+                            <div class="flex py-6">
+                                <div><i class="fa-solid fa-gas-pump text-[#ff5e14] md:text-5xl text-4xl"></i></div>
+                                <div class="pl-6">
+                                    <span class="text-xl font-semibold capitalize ">petroleum refinery</span>
+                                    <p class="text-[#687187] mt-2">Recently cut out of an illustrated magine and housed indust</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover:text-[#fa4f00] duration-200">
+                            <div>
+                                <img src="images/src-image-4.jpg" class="w-[100%] h-[auto]">
+                            </div>
+                            <div class="flex py-6">
+                                <div><i class="fa-solid fa-oil-well text-[#ff5e14] md:text-5xl text-4xl"></i></div>
+                                <div class="pl-6">
+                                    <span class="text-xl font-semibold capitalize ">oil and gas</span>
+                                    <p class="text-[#687187] mt-2">Recently cut out of an illustrated magine and housed indust</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover:text-[#fa4f00] duration-200">
+                            <div>
+                                <img src="images/src-image-5.jpg" class="w-[100%] h-[auto]">
+                            </div>
+                            <div class="flex py-6">
+                                <div><i class="fa-solid fa-truck text-[#ff5e14] md:text-5xl text-4xl"></i></div>
+                                <div class="pl-6">
+                                    <span class="text-xl font-semibold capitalize ">logistics services</span>
+                                    <p class="text-[#687187] mt-2">Recently cut out of an illustrated magine and housed indust</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover:text-[#fa4f00] duration-200">
+                            <div>
+                                <img src="images/src-image-6.jpg" class="w-[100%] h-[auto]">
+                            </div>
+                            <div class="flex py-6">
+                                <div><i class="fa-solid fa-industry text-[#ff5e14] md:text-5xl text-4xl"></i></div>
+                                <div class="pl-6">
+                                    <span class="text-xl font-semibold capitalize ">general industry</span>
+                                    <p class="text-[#687187] mt-2">Recently cut out of an illustrated magine and housed indust</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- industry section -->
+
+        <section class="bg-[url('images/industry-bg.jpg')] w-[100%] h-[500px] bg-cover bg-center">
+            <div class="bg-[rgba(0,0,0,0.6)] w-[100%] h-[500px]">
+                <div class="container mx-auto">
+                    <div class="max-w-[1160px] mx-auto">
+                        <div class="grid grid-cols-1">
+                            <div class="mx-auto text-center mt-[120px]">
+                                <h3 class="text-white md:text-3xl text-xl">We take care of your industry</h3>
+                                <h2 class="text-white md:text-5xl text-3xl font-bold capitalize mt-10 mb-12 leading-18">best industrial solution in <br> the world</h2>
+                                <a href="#" class="bg-[#ff5e14] md:px-6 md:py-3 px-4 py-3 rounded-3xl hover:bg-[#fa4f00] duration-200">
+                                    <span class="text-white capitalize md:text-base text-sm">our industry</span>
+                                    <i class="fa-solid fa-angle-right text-white text-base pl-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- project section -->
+
+        <section class="bg-white md:pt-[100px] py-[50px]">
+            <div class="container mx-auto">
+                <div class="src-header text-center mb-10">
+                    <span class="text-[#ff5e14] md:text-base text-sm uppercase font-semibold">services</span>
+                        <h2 class="md:text-[40px] text-3xl font-bold tracking-tight leading-10 mt-5 capitalize">the best services</h2>
+                        <h3 class="md:text-4xl text-3xl tracking-tight md:mb-5 mb-2">we provide</h3>
+                        <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative mx-auto">
+                            <div class="bg-white w-[4px] h-[4px] absolute right-[20px]"></div>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Swiper -->
+                <div class="swiper mySwiperslider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="images/pro-slide-1.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="images/pro-slide-2.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="images/pro-slide-3.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="images/pro-slide-4.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="images/pro-slide-5.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="images/pro-slide-6.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mx-auto flex gap-4 justify-center mt-[-25px] w-[100%]">
+                        <a href="#" class="swiper-btn-prev bg-[#ff5e14] py-4 px-5 text-center z-10 hover:bg-[#fa4f00]">
+                            <i class="fa-solid fa-arrow-left text-white"></i>
+                        </a>
+                        <a href="#" class="swiper-btn-next bg-[#ff5e14] py-4 px-5 text-center z-10 hover:bg-[#fa4f00]">
+                            <i class="fa-solid fa-arrow-right text-white"></i>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+
+
+
+        <!-- why choose us section -->
+
+        <section class="bg-white md:pt-[100px] pt-[50px] px-3 items-center">
+            <div class="container mx-auto">
+                <div class="max-w-[1160px] mx-auto">
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
+                        <div class="md:pr-20">
+                            <div>
+                                <span class="text-[#ff5e14] md:text-base text-sm uppercase font-semibold">why choose us</span>
+                                <h2 class="md:text-[40px] text-3xl font-bold tracking-tight leading-10 mt-5 capitalize">37 years of experience,</h2>
+                                <h3 class="md:text-4xl text-3xl tracking-tight md:mb-5 mb-2">in this industry</h3>
+                                <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative">
+                                    <div class="bg-white w-[4px] h-[4px] absolute right-[20px]"></div>
+                                </div>
+                            </div>
+                            <p class="text-base text-[#687187] my-10 md:leading-8">Cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer ne and housed in a nice, gilded frame. It showed a lady fitted out with</p>
+                            <div class="skills mb-6">
+                                <div class="flex justify-between mb-1">
+                                    <h6 class="text-base font-semibold">Production</h6>
+                                    <span class="font-semibold text-[#687187] pr-5">85%</span>
+                                </div>
+                                <div class="bg-[#e6e6e6] w-[100%] h-[5px] rounded-3xl">
+                                    <div class="bg-[#ff5e14] w-[85%] h-[5px] rounded-3xl relative">
+                                        <div class="bg-[#ff5e14] w-[11px] h-[11px] absolute right-0 top-[-3px] rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills mb-6">
+                                <div class="flex justify-between mb-1">
+                                    <h6 class="text-base font-semibold">Industrial</h6>
+                                    <span class="font-semibold text-[#687187] pr-5">95%</span>
+                                </div>
+                                <div class="bg-[#e6e6e6] w-[100%] h-[5px] rounded-3xl">
+                                    <div class="bg-[#ff5e14] w-[95%] h-[5px] rounded-3xl relative">
+                                        <div class="bg-[#ff5e14] w-[11px] h-[11px] absolute right-0 top-[-3px] rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills mb-6">
+                                <div class="flex justify-between mb-1">
+                                    <h6 class="text-base font-semibold">Construction</h6>
+                                    <span class="font-semibold text-[#687187] pr-5">92%</span>
+                                </div>
+                                <div class="bg-[#e6e6e6] w-[100%] h-[5px] rounded-3xl">
+                                    <div class="bg-[#ff5e14] w-[92%] h-[5px] rounded-3xl relative">
+                                        <div class="bg-[#ff5e14] w-[11px] h-[11px] absolute right-0 top-[-3px] rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills mb-6">
+                                <div class="flex justify-between mb-1">
+                                    <h6 class="text-base font-semibold">Satisfaction</h6>
+                                    <span class="font-semibold text-[#687187] pr-5">95%</span>
+                                </div>
+                                <div class="bg-[#e6e6e6] w-[100%] h-[5px] rounded-3xl">
+                                    <div class="bg-[#ff5e14] w-[95%] h-[5px] rounded-3xl relative">
+                                        <div class="bg-[#ff5e14] w-[11px] h-[11px] absolute right-0 top-[-3px] rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/why-image.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- member section -->
+
+        <section class="bg-white md:py-[100px] py-[50px] px-3">
+            <div class="container mx-auto">
+                <div class="max-w-[1160px] mx-auto">
+                    <div class="text-center mb-12">
+                        <span class="text-[#ff5e14] md:text-base text-sm uppercase font-semibold">members</span>
+                            <h2 class="md:[40px] text-3xl font-bold tracking-tight leading-10 mt-5 capitalize">37 years of experience,</h2>
+                            <h3 class="md:text-4xl text-3xl tracking-tight md:mb-5 mb-2">in this industry</h3>
+                            <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative mx-auto">
+                                <div class="bg-white w-[4px] h-[4px] absolute right-[20px]"></div>
+                            </div>
+                    </div>
+                    <div class="grid lg:grid-cols-4 md;grid-cols-2 grid-cols-1 gap-10">
+                        <div>
+                            <div class="mmbr-bx bg-[url('images/member-1.jpg')] w-[100%] h-[300px] bg-center bg-cover">
+                                <div class="mmbr hidden bg-[rgba(2,13,38,0.8)] text-center w-[100%] h-[300px] duration-200">
+                                    <div class="pt-[200px]">
+                                        <a href="#"><i class="fa-brands fa-facebook-f text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest-p text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center py-5">
+                                <h4 class="font-semibold">Danial Jain</h4>
+                                <span class="text-[#ff5e14] font-semibold">Mechanical Engineering</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mmbr-bx bg-[url('images/member-2.jpg')] w-[100%] h-[300px] bg-center bg-cover">
+                                <div class="mmbr hidden bg-[rgba(2,13,38,0.8)] text-center w-[100%] h-[300px]">
+                                    <div class="pt-[200px]">
+                                        <a href="#"><i class="fa-brands fa-facebook-f text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest-p text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center py-5">
+                                <h4 class="font-semibold">Jonathon Bill</h4>
+                                <span class="text-[#ff5e14] font-semibold">Site Manager</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mmbr-bx bg-[url('images/member-3.jpg')] w-[100%] h-[300px] bg-center bg-cover">
+                                <div class="mmbr hidden bg-[rgba(2,13,38,0.8)] text-center w-[100%] h-[300px]">
+                                    <div class="pt-[200px]">
+                                        <a href="#"><i class="fa-brands fa-facebook-f text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest-p text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center py-5">
+                                <h4 class="font-semibold">Gotalon Simrol</h4>
+                                <span class="text-[#ff5e14] font-semibold">Testing Manager</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mmbr-bx bg-[url('images/member-4.jpg')] w-[100%] h-[300px] bg-center bg-cover">
+                                <div class="mmbr hidden bg-[rgba(2,13,38,0.8)] text-center w-[100%] h-[300px]">
+                                    <div class="pt-[200px]">
+                                        <a href="#"><i class="fa-brands fa-facebook-f text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest-p text-white bg-[#ff5e14] p-2 rounded hover:bg-[#fa4f00]]"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center py-5">
+                                <h4 class="font-semibold">Mine Dow</h4>
+                                <span class="text-[#ff5e14] font-semibold">Cheif Officer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- resent news section -->
+
+        <section class="bg-white md:py-[100px] py-[50px] px-3">
+            <div class="container mx-auto">
+                <div class="max-w-[1160px] mx-auto">
+                    <div class="rc-nws items-center">
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-10">
+                            <div>
+                                <span class="text-[#ff5e14] md:text-base text-sm uppercase font-semibold">recent news</span>
+                                <h2 class="md:text-[40px] text-3xl font-bold tracking-tight leading-10 mt-5 capitalize">see what’s happing</h2>
+                                <h3 class="md:text-4xl text-3xl tracking-tight md:mb-5 mb-2">in our blog</h3>
+                                <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative">
+                                    <div class="bg-white w-[4px] h-[4px] absolute right-[20px]"></div>
+                                </div>
+                            </div>
+                            <div class="md:ml-8">
+                                <p class="text-[#687187]">Showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm.</p>
+                            </div>
+                            <div>
+                                <a href="#" class="bg-[#ff5e14] md:px-6 md:py-3 px-4 py-3 rounded-3xl md:float-right hover:bg-[#fa4f00] duration-200">
+                                    <span class="text-white md:text-base text-sm">get a qoute</span>
+                                    <i class="fa-solid fa-angle-right text-white text-base pl-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 items-center mt-10">
+                        <div>
+                            <div>
+                                <img src="images/recent-image-1.jpg">
+                            </div>
+                            <div class="py-5">
+                                <h3 class="text-xl font-semibold mb-5">
+                                    <a href="#" class="hover:text-[#fa4f00] duration-200">Garment sector set to take an environmental turn arround the world</a>
+                                </h3>
+                                <span class="text-[#687187] md:font-semibold">JUN 18, 2019</span>
+                                <p class="text-[#687187] my-5">small, lay peacefully between its four familiar walls. A collection of textile samples lay spread</p>
+                                <a href="#" class="text-[#687187] font-semibold hover:text-[#fa4f00] duration-200">
+                                    <span class="uppercase text-sm">read more</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="images/recent-image-2.jpg">
+                            </div>
+                            <div class="py-5">
+                                <h3 class="text-xl font-semibold mb-5">
+                                    <a href="#" class="hover:text-[#fa4f00] duration-200">Harrowing consequences of a life without hope for small-scale</a>
+                                </h3>
+                                <span class="text-[#687187] md:font-semibold">JUN 18, 2019</span>
+                                <p class="text-[#687187] my-5">small, lay peacefully between its four familiar walls. A collection of textile samples lay spread</p>
+                                <a href="#" class="text-[#687187] font-semibold hover:text-[#fa4f00] duration-200">
+                                    <span class="uppercase text-sm">read more</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="images/recent-image-3.jpg">
+                            </div>
+                            <div class="py-5">
+                                <h3 class="text-xl font-semibold mb-5">
+                                    <a href="#" class="hover:text-[#fa4f00] duration-200">Their families have been farming cotton for generations</a>
+                                </h3>
+                                <span class="text-[#687187] md:font-semibold">JUN 18, 2019</span>
+                                <p class="text-[#687187] my-5">small, lay peacefully between its four familiar walls. A collection of textile samples lay spread</p>
+                                <a href="#" class="text-[#687187] font-semibold hover:text-[#fa4f00] duration-200">
+                                    <span class="uppercase text-sm">read more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- contect us section -->
+
+        <section class="bg-white md:py-[100px] py-[50px] px-3 items-center">
+            <div class="container mx-auto">
+                <div class="max-w-[1160px] mx-auto">
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
+                        <div class="p-4">
+                            <div class="bg-[url('images/dotted-circel.png')] bg-no-repeat bg-center bg-cover relative">
+                                <img src="images/contact-man.png">
+                                <div class="bg-white shadow-lg w-[200px] h-[130px] absolute left-0 bottom-0">
+                                    <div class="flex items-center justify-center items-center mt-10">
+                                        <span class="text-[#ff5e14] text-4xl font-bold pr-1">500+</span>
+                                        <p class="text-[#687187] leading-5 pl-1">Call we <br> Back</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:pl-4 px-3">
+                            <div>
+                                <span class="text-[#ff5e14] md:text-base text-sm uppercase font-semibold">contact us</span>
+                                <h2 class="md:text-[40px] text-3xl font-bold tracking-tight leading-10 mt-5 capitalize">you can contact us,</h2>
+                                <h3 class="md:text-4xl text-2xl tracking-tight md:mb-5 mb-2">if you have any query</h3>
+                                <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative">
+                                    <div class="bg-white w-[4px] h-[4px] absolute right-[20px]"></div>
+                                </div>
+                            </div>
+                            <form class="mt-10">
+                                <div class="lg:w-[50%] w-[100%] float-left md:px-1 py-1">
+                                    <input type="name" name="name" placeholder="name*" class="bg-white w-[100%] h-[50px] border-2 rounded px-3 capitalize">
+                                </div>
+                                <div class="lg:w-[50%] w-[100%] float-left md:px-1 py-1">
+                                    <input type="email" name="email" placeholder="email*" class="bg-white w-[100%] h-[50px] border-2 rounded px-3 capitalize">
+                                </div>
+                                <div class="lg:w-[50%] w-[100%] float-left md:px-1 py-1">
+                                    <input type="phone" name="phone" placeholder="phone*" class="bg-white w-[100%] h-[50px] border-2 rounded px-3 capitalize">
+                                </div>
+                                <div class="lg:w-[50%] w-[100%] float-left md:px-1 py-1">
+                                    <select name="subject" class="bg-white w-[100%] h-[50px] border-2 rounded px-3 capitalize">
+                                        <option disabled="disabled" selected>contact subject</option>
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                    </select>
+                                </div>
+                                <div class="w-[100%] float-left md:px-1 py-1">
+                                    <textarea name="note" placeholder="weite description" class="bg-white w-[100%] h-[200px] border-2 rounded px-3 capitalize"></textarea>
+                                </div>
+
+                                <button class="mt-5">
+                                    <a href="#" class="bg-[#ff5e14] text-white px-16 py-3 rounded-3xl hover:bg-[#fa4f00] duration-200">
+                                        <span class="capitalize md:text-base text-sm">contact us</span>
+                                        <i class="fa-solid fa-angle-right text-base pl-2"></i>
+                                    </a>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- footer -->
+
+        <footer class="bg-[#020d26] items-center">
+            <div class="container mx-auto md:py-[100px] py-[60px] px-4">
+                <div class="max-w-[1160px] mx-auto">
+                    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
+                        <div>
+                            <div>
+                                <h3 class="text-white text-xl uppercase font-semibold mb-3">about us</h3>
+                                <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative">
+                                    <div class="bg-[#020d26] w-[4px] h-[4px] absolute right-[20px]"></div>
+                                </div>
+                                <p class="text-[#687187] my-10 font-semibold">Who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to</p>
+                                <div > 
+                                    <a href="#" class="border rounded p-1 hover:bg-[#fa4f00] hover:border-[#ff5e14] duration-200"><i class="fa-brands fa-facebook-f text-sm text-white p-2 rounded hover:text-white"></i></a>
+                                    <a href="#" class="border rounded p-1 hover:bg-[#fa4f00] hover:border-[#ff5e14] duration-200"><i class="fa-brands fa-twitter text-sm text-white  p-2 rounded hover:text-white"></i></a>
+                                    <a href="#" class="border rounded p-1 hover:bg-[#fa4f00] hover:border-[#ff5e14] duration-200"><i class="fa-brands fa-instagram text-sm text-white  p-2 rounded hover:text-white"></i></a>
+                                    <a href="#" class="border rounded p-1 hover:bg-[#fa4f00] hover:border-[#ff5e14] duration-200"><i class="fa-brands fa-pinterest-p text-sm text-white  p-2 rounded hover:text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="text-white text-xl uppercase font-semibold mb-3">important links</h3>
+                                <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative">
+                                    <div class="bg-[#020d26] w-[4px] h-[4px] absolute right-[20px]"></div>
+                                </div>
+                                <ul class="mt-10 font-semibold duration-200"> 
+                                    <li class="text-[#687187] text-base capitalize pb-1 hover:text-white duration-200"><a href="#">about us</a></li>
+                                    <li class="text-[#687187] text-base capitalize pb-1 hover:text-white duration-200"><a href="#">the team</a></li>
+                                    <li class="text-[#687187] text-base capitalize pb-1 hover:text-white duration-200"><a href="#">services</a></li>
+                                    <li class="text-[#687187] text-base capitalize pb-1 hover:text-white duration-200"><a href="#">contacy us</a></li>
+                                    <li class="text-[#687187] text-base capitalize pb-1 hover:text-white duration-200"><a href="#">blog</a></li>
+                                    <li class="text-[#687187] text-base capitalize pb-1 hover:text-white duration-200"><a href="#">news</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="text-white text-xl uppercase font-semibold mb-3">address location</h3>
+                                <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative">
+                                    <div class="bg-[#020d26] w-[4px] h-[4px] absolute right-[20px]"></div>
+                                </div>
+                            </div>
+                            <ul class="mt-10 font-semibold">
+                                <li class="text-[#687187] text-base pb-2">House no 25, dreen street, melborn Dowltown</li>
+                                <li class="text-[#687187] text-base pb-2">Phone: ++8525120</li>
+                                <li class="text-[#687187] text-base pb-2">Office Time: 8AM- 4PM</li>
+                                <li class="text-[#687187] text-base pb-2">Email: demo@ex.com</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="text-white text-xl uppercase font-semibold mb-3">news letter</h3>
+                                <div class="bg-[#ff5e14] rounded-3xl w-[90px] h-[4px] relative">
+                                    <div class="bg-[#020d26] w-[4px] h-[4px] absolute right-[20px]"></div>
+                                </div>
+                            </div>
+                            <p class="text-[#687187] my-10 font-semibold">You will be notified when somthing new will be appear.</p>
+                            <div class="mail flex relative">
+                                <input type="email" name="email" placeholder="Email Address *" class="bg-[#292e3b] rounded w-[100%] h-[50px] px-3">
+                                <button type="submit" class="bg-[#292e3b] px-3 absolute right-0 top-[10px]">
+                                    <i class="fa-regular fa-envelope text-white text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="container mx-auto">
+                <div class="max-w-[1160px] mx-auto border-t py-5">
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
+                        <div>
+                            <p class="text-[#687187] font-semibold">Copyright © 2019 Nictorys. All rights reserved</p>
+                        </div>
+                        <div>
+                            <ul class="flex md:float-right">
+                                <li class="px-2 text-[#687187] font-semibold hover:text-white"><a href="#">privecy</a></li>
+                                <li class="px-2 text-[#687187] font-semibold hover:text-white"><a href="#">term to use</a></li>
+                                <li class="px-2 text-[#687187] font-semibold hover:text-white"><a href="#">cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script>
+        const navDailoge = document.getElementById('nav-dailoge');
+        function handleMenu() {
+            navDailoge.classList.toggle('hidden')
+        }
+
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+        var swiper = new Swiper(".mySwiperslider", {
+      slidesPerView: 4,
+      loop: true,
+    //   spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-btn-next",
+            prevEl: ".swiper-btn-prev",
+            clickable: true,
+      },
+      breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+      },
+    });
+      </script>
+      
+    
+</body>
+</html>
